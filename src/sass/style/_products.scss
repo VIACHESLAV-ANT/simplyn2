@@ -1,0 +1,136 @@
+.products-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height:120%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    &--accent{
+        color: var(--accent-text);
+    }
+}
+
+
+.products__name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height:133%; 
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    margin-bottom: 2px;
+}
+
+.products__text{
+    color: var(--secondary-dark-text);
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 18px;
+}
+
+.products__price{
+    font-weight: 600;
+    line-height: 121%;
+
+    border-radius: 100px;
+    padding: 8px 20px;
+    background: #FAFAFA;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+
+    flex-direction: row;
+
+}
+
+.products__item{
+    display: none;
+    background-color: #FFFFFF;
+    padding: 32px 52px;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+
+    margin-bottom: 20px;
+
+    &--active{
+        display: block;
+    }
+}
+
+.products__images{
+    margin-bottom: 8px;
+}
+
+.products__description{
+    text-align: center;
+}
+
+.products__title{
+    text-align: center;
+    margin-bottom: 32px;
+
+    &--accent{
+        color: var(--accent-text);
+    }
+}
+
+.products__pilot{
+    display: flex;
+    justify-content: center;
+}
+
+.products__button{
+    display: block;
+    background: rgba(17, 17, 17, 0.1);
+    width: 13px;
+    height: 13px;
+    border-radius: 6.5px;
+    border: none;
+    &--active{
+        width: 28px;
+        background: rgba(253, 146, 34, 1);
+
+        }
+    &:not(:first-child){
+    margin-left: 13px;
+    }
+}
+
+
+//table
+
+@media screen and (min-width: 768px) {
+    .products__list{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 32px;
+    }
+
+    .products__item{
+        display: block;
+        padding: 32px 20px;
+        margin-right: 18px;
+        margin-bottom: 0;
+    }
+
+    .products__title{
+        margin-bottom: 50px;
+    }
+}
+
+//Desctop
+
+@media screen and (min-width: 1200px) {
+    .products__title{
+        margin-bottom: 50px;
+    }
+
+    .products__item{
+        margin-bottom: 0;
+    }
+
+    .products__list{
+        margin-bottom: 32px;
+    }
+}

@@ -1,12 +1,849 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-  </head>
-  <body>
-    <h1>why not this?</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
+    <body class="page">
+    <header class="header" id="home">
+        <div class="container header-container">
+        <a href="./index.html" class="logo">
+            SIMPLY<span class="logo--normal">CHOCOLATE</span> 
+        <svg class="logo__icon" width="24px" height="24px">
+            <use href="./images/svg/header.svg#logo-chocolate"></use>
+        </svg>
+        </a>
+        <div class="menu--content">
+            <nav>
+        <ul class="navigation">
+            <li class="navigation__item">
+                <a href="#home" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#made" class="navigation__link">How it’s made?</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#products" class="navigation__link">Our products</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#top" class="navigation__link">Top sellers</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#review" class="navigation__link">Chocolate is loved</a>
+            </li>
+        </ul>
+
+        <ul class="social">
+            <li class="social__item">
+                <a href="https://www.instagram.com/" class="social__link" target="_blank" rel="noreferrer noopener">
+                    <svg class="social__icon" width="24px" height="24px">
+                        <use href="./images/svg/header1.svg#instagram" ></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="https://twitter.com/" class="social__link" target="_blank" rel="noreferrer noopener">
+                    <svg class="social__icon" width="24px" height="24px">
+                        <use href="./images/svg/header1.svg#twitter" ></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <button class="button-menu">
+        <svg class="button__icon">
+            <use href="./images/svg/header.svg#menu" class="button__menu"></use>
+            <use href="./images/svg/header.svg#close" class="button__close"></use>
+        </svg>
+    </button>
+    </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="container hero-container">
+        <div class="hero">
+        <h1 class="visually-hidden">Chocolate</h1>
+        <p class="hero__title">Treat yourself or a loved one to<br/> our finest ingredients for a moment of pure delight!</p>
+        <div class="nav-hero">
+        <ul class="button button--hero">
+            <li class="button__item">
+                <button class="button__form button__form--buy">Buy now</button>
+            </li>
+            <li class="button__item">
+                <a class="button__form button__form--how" href="#made">How it's made
+                </a>
+            </li>
+        </ul>
+        <a href="#footer" class="pointer--container">
+        <p class="pointer">scroll down</p>
+        <svg class="pointer__icon">
+            <use href="./images/svg/hero/point.svg#point"></use>
+        </svg>
+    </a>
+</div>
+</div>
+    </section>
+
+    <!-- advantages -->
+    <section class="preference">
+        <div class="container preference--container">
+        <h2 class="preference-general">Preference</h2>
+        <ul class="preference-list">
+            <li class="preference-item">
+                <svg class="preference-icon">
+                    <use href="./images/svg/preference.svg#chocolate"></use>
+                </svg>
+                <h3 class="preference-title">
+                    Unsurpassed taste
+                </h3>
+                <p class="preference-text">
+                    Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
+                </p>
+            </li>
+            <li class="preference-item">
+                <svg class="preference-icon">
+                    <use href="./images/svg/preference.svg#coin"></use>
+                </svg>
+                <h3 class="preference-title">
+                    Affordable price
+                </h3>
+                <p class="preference-text">
+                    Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
+                </p>
+            </li>
+            <li class="preference-item">
+                <svg class="preference-icon">
+                    <use href="./images/svg/preference.svg#spoon"></use>
+                </svg>
+                <h3 class="preference-title">
+                    Own production
+                </h3>
+                <p class="preference-text">
+                    We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
+                </p>
+        </ul>
+    </div>
+    </section>
+
+    <!-- unique_components -->
+    <section class="taste">
+        <div class="container">
+        <h2 class="taste__title">
+            IT ALL ADDS UP TO ONE EXCEPTIONAL 
+            <span class="taste__title--accent">TASTE</span>
+            SENSATION
+        </h2>
+        <p class="taste__text">
+            At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.
+        </p>
+        <ul class="taste__list">
+            <li class="taste__item taste__item--accent">
+                <picture>
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/mobile/milkchocolate/milkchocolate1x.jpg 1x,
+                    ./images/jpg/taste/mobile/milkchocolate/milkchocolate1.5x.jpg 1.5x,
+                    ./images/jpg/taste/mobile/milkchocolate/milkchocolate2x.jpg 2x"
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/descktop/milkchocolate/milkchocolate1.5x.jpg 1.5x,
+                    ./images/jpg/taste/descktop/milkchocolate/milkchocolate2x.jpg 2x,
+                    ./images/jpg/taste/descktop/milkchocolate/milkchocolate1x.jpg 1x"
+                    media="(min-width: 1200px)">
+                <img 
+                src="./images/jpg/taste/mobile/milkchocolate.jpg" 
+                alt="milk chocolate"  
+                class="taste__images"
+                />
+            </picture>
+                <p  class="taste__name">MILK CHOCOLATE</p>
+                <div class="taste__card">
+                 <h3 class="taste__card__title">MILK CHOCOLATE</h3>
+                 <ul class="card__date">
+                 <li class="info__name">chocolate</li>
+                 <li class="info__benefits">the benefits</li>
+                </ul>
+                 <p class="taste__card__text">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.</p>
+                </div>
+            </li>
+            <li class="taste__item taste__item--white--second">
+                <picture>
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/mobile/chocolate/chocolate1x.jpg 1x,
+                    ./images/jpg/taste/mobile/chocolate/chocolate1.5x.jpg 1.5x,
+                    ./images/jpg/taste/mobile/chocolate/chocolate2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/descktop/chocolate/chocolate1x.jpg 1x,
+                    ./images/jpg/taste/descktop/chocolate/chocolate1.5x.jpg 1.5x,
+                    ./images/jpg/taste/descktop/chocolate/chocolate2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)">
+                <img 
+                src="./images/jpg/taste/mobile/milkchocolate.jpg" 
+                alt="semi - sweet chocolate"  
+                class="taste__images"
+                />
+            </picture>
+                <p  class="taste__name taste__name--white">SEMI - SWEET CHOCOLATE</p>
+                <div class="taste__card">
+                    <h3 class="taste__card__title">SEMI - SWEET CHOCOLATE</h3>
+                    <ul class="card__date">
+                    <li class="info__name">sweet chocolate</li>
+                    <li class="info__benefits">the benefits</li>
+                   </ul>
+                    <p class="taste__card__text">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter.</p>
+                   </div>
+            </li>
+            <li class="taste__item taste__item--white">
+                <picture>
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/mobile/milk/milk1x.jpg 1x,
+                    ./images/jpg/taste/mobile/milk/milk1.5x.jpg 1.5x,
+                    ./images/jpg/taste/mobile/milk/milk2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/descktop/milk/milk1.5x.jpg 1.5x,
+                    ./images/jpg/taste/descktop/milk/milk2x.jpg 2x,
+                    ./images/jpg/taste/descktop/milk/milk1x.jpg 1x
+                    "
+                    media="(min-width: 1200px)">
+                <img 
+                src="./images/jpg/taste/mobile/milk/milk1.5x.jpg" 
+                alt="milk"  
+                class="taste__images"
+                />
+            </picture>
+                <p  class="taste__name taste__name--white">milk</p>
+                <div class="taste__card">
+                    <h3 class="taste__card__title">MILK</h3>
+                    <ul class="card__date">
+                    <li class="info__name">milk</li>
+                    <li class="info__benefits">the benefits</li>
+                   </ul>
+                    <p class="taste__card__text">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.</p>
+                   </div>
+            </li>
+            <li class="taste__item taste__item--dark">
+                <picture>
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/mobile/hazelnuts/hazelnuts1x.jpg 1x,
+                    ./images/jpg/taste/mobile/hazelnuts/hazelnuts1.5x.jpg 1.5x,
+                    ./images/jpg/taste/mobile/hazelnuts/hazelnuts2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/descktop/hazelnuts/hazelnuts1.5x.jpg 1.5x,
+                    ./images/jpg/taste/descktop/hazelnuts/hazelnuts2x.jpg 2x,
+                    ./images/jpg/taste/descktop/hazelnuts/hazelnuts1x.jpg 1x
+                    "
+                    media="(min-width: 1200px)">
+                <img 
+                src="./images/jpg/taste/mobile/milk/milk1.5x.jpg" 
+                alt="milk"  
+                class="taste__images"
+                />
+            </picture>
+                <p  class="taste__name">nuts</p>
+                <div class="taste__card">
+                    <h3 class="taste__card__title">NUTS</h3>
+                    <ul class="card__date">
+                    <li class="info__name">nuts</li>
+                    <li class="info__benefits">the benefits</li>
+                   </ul>
+                    <p class="taste__card__text">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p>
+                   </div>
+            </li>
+            <li class="taste__item taste__item--white--last">
+                <picture>
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/mobile/chocolate/chocolate1x.jpg 1x,
+                    ./images/jpg/taste/mobile/chocolate/chocolate1.5x.jpg 1.5x,
+                    ./images/jpg/taste/mobile/chocolate/chocolate2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./images/jpg/taste/descktop/chocolate/chocolate1x.jpg 1x,
+                    ./images/jpg/taste/descktop/chocolate/chocolate1.5x.jpg 1.5x,
+                    ./images/jpg/taste/descktop/chocolate/chocolate2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)">
+                <img 
+                src="./images/jpg/taste/mobile/milkchocolate.jpg" 
+                alt="semi - sweet chocolate"  
+                class="taste__images"
+                />
+            </picture>
+                <p  class="taste__name taste__name--white">SEMI - SWEET CHOCOLATE</p>
+                <div class="taste__card">
+                    <h3 class="taste__card__title">SEMI - SWEET CHOCOLATE</h3>
+                    <ul class="card__date">
+                    <li class="info__name">sweet chocolate</li>
+                    <li class="info__benefits">the benefits</li>
+                   </ul>
+                    <p class="taste__card__text">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter.</p>
+                   </div>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <!-- How_its-made -->
+    <section  class="made" id="made">
+        <div class="container made-container">
+        <h2 class="made__title">HOW IT’S <span class="made__title--accent">MADE?</span></h2>
+        <div class="made__body">
+        <video
+        src="./images/videochocolate.mp4"
+        controls poster="./images/jpg/video/table/img1.5x.jpg"
+        preload="metadata"
+        class="made__video"
+        >
+    </video>
+        <div class="made__card">
+        <h3 class="made__promotion">Try  our chocolates today and discover the perfect balance of flavor</h3>
+        <ul class="made__list">
+            <li class="made__item">
+                <p class="made__text">
+                    Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+                </p>
+            </li>
+            <li class="made__item">
+                <p class="made__text">
+                    At the same time, prepare a water bath. Melt the butter on it.
+                </p>
+            </li>
+            <li class="made__item">
+                <p class="made__text">
+                    "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.
+                </p>
+            </li>
+            <li class="made__item">
+                <p class="made__text">
+                    Heat the mixture over low heat, letting it barely boil.
+                </p>
+            </li>
+            <li class="made__item">
+                <p class="made__text">
+                    Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
+                </p>
+            </li>
+        </ul>
+    </div>
+    </div>
+</div>
+    </section>
+
+    <!-- our_products -->
+    <section class="products" id="products">
+    <div class="container">
+        <h2 class="products__title">OUR <span class="products__title--accent">PRODUCTS</span></h2>
+    <ul class="products__list">
+        <li class="products__item products__item--active">
+            <img src="./images/jpg/product/orange.jpg" alt="photo chocolate" class="products__imagess">
+            <div class="products__description">    
+                <h3 class="products__name">orange</h3>
+                <p class="products__text">Dark chocolate</p>
+                <button class="products__price">45 UAH</button>
+            </div>    
+        </li>
+        <li class="products__item">
+            <img src="./images/jpg/product/applecranberry.jpg" alt="photo chocolate" class="products__imagess">
+            <div class="products__description">
+            <h3 class="products__name">APPLE&CRANBERRY</h3>
+            <p class="products__text">Milk chocolate</p>
+            <button class="products__price">50 UAH</button>
+            </div>
+        </li>
+        <li class="products__item">
+            <img src="./images/jpg/product/limesea.jpg" alt="photo chocolate" class="products__imagess">
+            <div class="products__description">
+            <h3 class="products__name">lime&sea salt</h3>
+            <p class="products__text">Dark chocolate</p>
+            <button class="products__price">66 UAH</button>
+            </div>
+        </li>
+        <li class="products__item">
+            <img src="./images/jpg/product/pineapple.jpg" alt="photo chocolate" class="products__imagess">
+            <div class="products__description">
+            <h3 class="products__name">pineapple</h3>
+            <p class="products__text">Dark chocolate</p>
+            <button class="products__price">54 UAH</button>
+            </div>
+        </li>
+    </ul>
+    <ul class="products__pilot">
+        <li class="products__button products__button--active"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+    </ul>
+    </div>
+    </section>
+
+    <!-- top_sellers -->
+    <section class="top" id="top">
+<div class="container">
+    <h2 class="top__title">
+        <span class="top__title--accent">Top</span> Sellers
+    </h2>
+    <ul class="top__list">
+        <li class="top__item">
+            <picture>
+                <source              
+                srcset="
+                ./images/jpg/top/mobile/nuts/nuts1x.jpg 1x,
+                ./images/jpg/top/mobile/nuts/nuts1.5x.jpg 1.5x,
+                ./images/jpg/top/mobile/nuts/nuts2x.jpg 2x
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./images/jpg/top/table/nuts/nuts1x.jpg 1x,
+                ./images/jpg/top/table/nuts/nuts1.5x.jpg 1.5x,
+                ./images/jpg/top/table/nuts/nuts2x.jpg 2x
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./images/jpg/top/descktop/nuts/nuts1x.jpg 1x,
+                ./images/jpg/top/descktop/nuts/nuts1.5x.jpg 1.5x,
+                ./images/jpg/top/descktop/nuts/nuts2x.jpg 2x
+                "
+                media="(min-width: 1200px)">
+                <img 
+                src="./images/jpg/top/table/nuts/nuts1x.jpg"
+                alt="chocolate nuts" 
+                class="top__image top__image--nuts" />
+            </picture>
+        </li>
+        <li class="top__item">
+            <picture>
+                <source              
+                srcset="
+                ./images/jpg/top/mobile/carmel/carmel1x.jpg 1x,
+                ./images/jpg/top/mobile/carmel/carmel1.5x.jpg 1.5x,
+                ./images/jpg/top/mobile/carmel/carmel2x.jpg 2x
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./images/jpg/top/table/carmel/carmel1x.jpg 1x,
+                ./images/jpg/top/table/carmel/carmel1.5x.jpg 1.5x,
+                ./images/jpg/top/table/carmel/carmel2x.jpg 2x
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./images/jpg/top/descktop/carmel/carmel1x.jpg 1x,
+                ./images/jpg/top/descktop/carmel/carmel1.5x.jpg 1.5x,
+                ./images/jpg/top/descktop/carmel/carmel2x.jpg 2x
+                "
+                media="(min-width: 1200px)">
+                <img 
+                src="./images/jpg/top/table/carmel/carmel1x.jpg" 
+                alt="chocolate carmel" 
+                class="top__image top__image--carmel" />
+            </picture>
+            
+        </li>
+        <li class="top__item">
+            <picture>
+                <source              
+                srcset="
+                ./images/jpg/top/mobile/darkchocolate/darkchocolate1x.jpg 1x,
+                ./images/jpg/top/mobile/darkchocolate/darkchocolate1.5x.jpg 1.5x,
+                ./images/jpg/top/mobile/darkchocolate/darkchocolate2x.jpg 2x
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./images/jpg/top/table/darkchocolate/darkchocolate1x.jpg 1x,
+                ./images/jpg/top/table/darkchocolate/darkchocolate1.5x.jpg 1.5x,
+                ./images/jpg/top/table/darkchocolate/darkchocolate2x.jpg 2x
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./images/jpg/top/descktop/darkchocolate/darkchocolate1x.jpg 1x,
+                ./images/jpg/top/descktop/darkchocolate/darkchocolate1.5x.jpg 1.5x,
+                ./images/jpg/top/descktop/darkchocolate/darkchocolate2x.jpg 2x
+                "
+                media="(min-width: 1200px)">
+                <img 
+                src="./images/jpg/top/descktop/darkchocolate/darcchocolate1x.jpg" 
+                alt="chocolate dark" 
+                class="top__image top__image--dark"/>
+            </picture> 
+        </li>
+    </ul>
+    <div class="top__info">
+    <p class="top__text">
+        Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
+    </p>
+    <picture>
+        <source              
+        srcset="
+        ./images/jpg/top/mobile/carmel/carmel1x.jpg 1x,
+        ./images/jpg/top/mobile/carmel/carmel1.5x.jpg 1.5x,
+        ./images/jpg/top/mobile/carmel/carmel2x.jpg 2x
+        "
+        media="(max-width: 767px)">
+
+        <source              
+        srcset="
+        ./images/jpg/top/table/carmel/carmel1x.jpg 1x,
+        ./images/jpg/top/table/carmel/carmel1.5x.jpg 1.5x,
+        ./images/jpg/top/table/carmel/carmel2x.jpg 2x
+        "
+        media="(max-width: 1199px)">
+
+        <source              
+        srcset="
+        ./images/jpg/top/descktop/carmel/carmel1x.jpg 1x,
+        ./images/jpg/top/descktop/carmel/carmel1.5x.jpg 1.5x,
+        ./images/jpg/top/descktop/carmel/carmel2x.jpg 2x
+        "
+        media="(min-width: 1200px)">
+        <img 
+        src="./images/jpg/top/descktop/carmel.jpg" 
+        alt="chocolate carmel" 
+        class="top__image top__image--mobile"/>
+    </picture>
+    <button class="top__button">Buy now</button>
+    </div>
+</div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="review" id="review">
+<div class="container">
+    <h2 class="review__title">
+        <span class="review__title--accent">chocolate</span> is loved
+    </h2>
+    <ul class="review__list">
+        <li class="review__item review__item--active">
+            <img src="./images/jpg/review/Victoria.jpg" alt="photo people" class="review__images">
+            <h3 class="review__name">Victoria Dobrzhanska</h3>
+            <p class="review__text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+        </li>
+        <li class="review__item">
+            <img src="./images/jpg/review/Nazar.jpg" alt="photo people" class="review__images">
+            <h3 class="review__name">Nazar Babenko</h3>
+            <p class="review__text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+        </li>
+        <li class="review__item">
+            <img src="./images/jpg/review/Olena.jpg" alt="photo people" class="review__images">
+            <h3 class="review__name">Olena Kampusch</h3>
+            <p class="review__text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+        </li>
+    </ul>
+    <ul class="review__pilot">
+        <li class="review__button review__button--active"></li>
+        <li class="review__button"></li>
+        <li class="review__button"></li>
+        <li class="review__button"></li>
+    </ul>
+    <button class="review__buttan">Leave a review</button>
+</div>
+    </section>
+
+    <!-- subscribe -->
+    <section class="subscribe">
+<div class="container container--subscribe">
+    <h2 class="subscribe__title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="subscribe__text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
+    <button class="subscribe__button">Subscribe</button>
+</div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+    <div class="footer--container container">
+    <div class="company--info">
+    <h2 class="footer__title"><span class="footer__title--accent">Chocolate</span> a delicious<br/> cure for a bad day</h2>
+        <div class="container__contact">
+    <ul class="contact">
+        <li class="contact__item">Contact us</li>
+        <li class="contact__item"><a href="tel:+380684439426" class="contact__link">+380 (68) 443-94-26</a></li>
+        <li class="contact__item"><a href="mailto:simplychoc@gmail.com" class="contact__link">simplychoc@gmail.com</a></li>
+    </ul>
+    <ul class="social">
+        <li class="social__item">
+            <a href="https://www.instagram.com/" class="social__link" target="_blank" rel="noreferrer noopener">
+                <svg class="social__icon" width="24px" height="24px">
+                    <use href="./images/svg/header1.svg#instagram" ></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__item">
+            <a href="https://twitter.com/" class="social__link" target="_blank" rel="noreferrer noopener">
+                <svg class="social__icon" width="24px" height="24px">
+                    <use href="./images/svg/header1.svg#twitter" ></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+    </div>
+</div>
+        <ul class="navigation">
+            <li class="navigation__item">
+                <a href="#home" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#made" class="navigation__link">How it’s made?</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#products" class="navigation__link">Our products</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#top" class="navigation__link">Top sellers</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#review" class="navigation__link">Chocolate is loved</a>
+            </li>
+        </ul>
+</div>
+</footer>
+<div class="backdrop-buy is-hidden">
+    <div class="modal-buy">
+<form class="form-buy js-speaker-form">
+    <b class="form-buy__title"><span class="form-buy__title--accent">BUY </span>NOW</b>
+    <button class="form-buy-menu">
+        <svg class="form-buy__icon">
+            <use href="./images/svg/menu.svg#close" class="form-buy__close"></use>
+        </svg>
+    </button>
+    <ul role="group" class="form-buy__group">
+        <li class="form-buy__item">
+            <label for="order1" >
+                <input class="form-buy__checkbox" type="checkbox" name="order" id="order1" value="white-chokolad200gr">
+            </label>
+                <div class="form-buy__newbox">
+                    <picture>
+                        <source              
+                        srcset="
+                        ./images/jpg/formbuy/mobile/white/white1x.jpg 1x,
+                        ./images/jpg/formbuy/mobile/white/white1.5x.jpg 1.5x,
+                        ./images/jpg/formbuy/mobile/white/white2x.jpg 2x
+                        "
+                        media="(max-width: 767px)">
+    
+                        <source              
+                        srcset="
+                        ./images/jpg/formbuy/table/white/white1x.jpg 1x,
+                        ./images/jpg/formbuy/table/white/white1.5x.jpg 1.5x,
+                        ./images/jpg/formbuy/table/white/white2x.jpg 2x
+                        "
+                        media="(min-width: 768px)">
+                        <img 
+                        src="./images/jpg/formbuy/table/white/white1x.jpg" 
+                        alt="white chocoled" />
+                </picture>
+                    
+                    <button class="form-buy__massa">100 g</button>
+                </div>
+            
+        </li>
+        <li class="form-buy__item">            
+            <label for="order2" >
+                <input class="form-buy__checkbox" type="checkbox" name="order" id="order2" value="white-chokolad200gr">
+            </label>    
+                <div class="form-buy__newbox">
+                        <picture>
+                            <source              
+                            srcset="
+                            ./images/jpg/formbuy/mobile/milk/milk1x.jpg 1x,
+                            ./images/jpg/formbuy/mobile/milk/milk1.5x.jpg 1.5x,
+                            ./images/jpg/formbuy/mobile/milk/milk2x.jpg 2x
+                            "
+                            media="(max-width: 767px)">
+        
+                            <source              
+                            srcset="
+                            ./images/jpg/formbuy/table/milk/milk1x.jpg 1x,
+                            ./images/jpg/formbuy/table/milk/milk1.5x.jpg 1.5x,
+                            ./images/jpg/formbuy/table/milk/milk2x.jpg 2x
+                            "
+                            media="(min-width: 768px)">
+                            <img src="./images/jpg/formbuy/mobile/milk/milk1x.jpg" 
+                            alt="milk chocxolate"/>
+                    </picture>
+                        <button class="form-buy__massa">200 g</button>
+                    </div>
+        </li>
+        <li>            
+            <label for="order3" >
+                <input class="form-buy__checkbox" type="checkbox" name="order" id="order3" value="white-chokolad200gr">
+            </label>   
+                <div class="form-buy__newbox">
+                        <picture>
+                            <source              
+                            srcset="
+                            ./images/jpg/formbuy/mobile/darck/darck1x.jpg 1x,
+                            ./images/jpg/formbuy/mobile/darck/darck1.5x.jpg 1.5x,
+                            ./images/jpg/formbuy/mobile/darck/darck2x.jpg 2x
+                            "
+                            media="(max-width: 767px)">
+        
+                            <source              
+                            srcset="
+                            ./images/jpg/formbuy/table/darck/darck1x.jpg 1x,
+                            ./images/jpg/formbuy/table/darck/darck1.5x.jpg 1.5x,
+                            ./images/jpg/formbuy/table/darck/darck2x.jpg 2x
+                            "
+                            media="(min-width: 768px)">
+                            <img 
+                            src="./images/jpg/formbuy/table/darck/darck1x.jpg" 
+                            alt="darck chocolate"/>
+                    </picture>
+                        <button class="form-buy__massa">300 g</button>
+                    </div>
+        </li>
+    </ul>
+<div class="form-buy__field">
+    <label for="Personalinformation" class="fotm-buy__label">Personal information</label>
+    <div class="name-container">
+    <input type="text" name="name" id="Personalinformation" class="form-buy__input" autofocus placeholder="Name"/>
+    <input type="text" name="surname" class="form-buy__input" placeholder="Surname">
+    </div>
+</div>
+<div class="form-buy__field">
+    <label for="email" class="fotm-buy__label">Email</label>
+    <input type="email" name="email" id="email" class="form-buy__input" placeholder="Enter your email">
+</div>
+<div class="form-buy__field">
+    <label for="phone" class="fotm-buy__label">Phone number</label>
+    <input type="number" name="phone" id="phone" class="form-buy__input form-buy__input--phone" placeholder="Phone number">
+    <div class="uk-date">
+        <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="uk-date__flag">
+            <g clip-path="url(#clip0_33_3992)">
+            <path d="M23.874 0.793945H0.182129V18.4251H23.874V0.793945Z" fill="#FFD700"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.182129 0.793945H23.874V9.60951H0.182129V0.793945Z" fill="#0057B7"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_33_3992">
+            <rect width="24" height="18" fill="white" transform="translate(0 0.600098)"/>
+            </clipPath>
+            </defs>
+        </svg>
+        <p class="uk-date__number">+380</p>
+    </div>
+</div>
+<div class="form-buy__field">
+    <label for="card" class="fotm-buy__label">Card number</label>
+    <input type="number" name="card_number" class="form-buy__input" id="card" placeholder="Enter card">
+    <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mastercard">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 12.284C9.83793 13.2437 8.33053 13.8231 6.68337 13.8231C3.00802 13.8231 0.0285645 10.9385 0.0285645 7.38029C0.0285645 3.82203 3.00802 0.9375 6.68337 0.9375C8.33053 0.9375 9.83793 1.51687 11 2.47659C12.1621 1.51687 13.6695 0.9375 15.3166 0.9375C18.992 0.9375 21.9714 3.82203 21.9714 7.38029C21.9714 10.9385 18.992 13.8231 15.3166 13.8231C13.6695 13.8231 12.1621 13.2437 11 12.284Z" fill="#ED0006"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 12.284C12.4309 11.1023 13.3382 9.34385 13.3382 7.38029C13.3382 5.41672 12.4309 3.65832 11 2.47659C12.1621 1.51687 13.6695 0.9375 15.3166 0.9375C18.992 0.9375 21.9714 3.82203 21.9714 7.38029C21.9714 10.9385 18.992 13.8231 15.3166 13.8231C13.6695 13.8231 12.1621 13.2437 11 12.284Z" fill="#F9A000"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 12.2839C12.4309 11.1022 13.3382 9.34378 13.3382 7.38023C13.3382 5.41668 12.4309 3.65829 11 2.47656C9.56916 3.65829 8.66187 5.41668 8.66187 7.38023C8.66187 9.34378 9.56916 11.1022 11 12.2839Z" fill="#FF5E00"/>
+        </svg>
+    </div>
+<div class="form-buy__field">
+<label for="comment" class="fotm-buy__label">Comment</label>
+<textarea name="comment" id="comment" placeholder="Enter text"></textarea>
+</div>
+    <button type="submit" class="form-buy__submit">Submit</button>
+</form>
+</div>    
+</div>
+<div class="backdrop-our is-hidden">
+    <div class="modal-our">
+<form class="form-our js-speaker-form">
+    <b class="form-our__title">LEAVE A REVIEW<br/> ABOUT <span class="form-our__title--accent">OUR CHOCOLATE</span></b>
+    <button class="form-our-menu">
+        <svg class="form-our__icon">
+            <use href="./images/svg/menu.svg#close" class="form-our__close"></use>
+        </svg>
+    </button>
+<div class="form-our__field">
+    <input type="text" name="name" class="form-our__input" placeholder="Name"/>
+</div>
+<div class="form-our__field">
+    <input type="email" name="email" class="form-our__input" placeholder="Enter your email">
+</div>
+<div class="form-our__field">
+    <input type="number" name="phone" class="form-our__input form-our__input--phone" placeholder="Phone number">
+    <div class="our__uk-date">
+        <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="uk-date__flag">
+            <g clip-path="url(#clip0_33_3992)">
+            <path d="M23.874 0.793945H0.182129V18.4251H23.874V0.793945Z" fill="#FFD700"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.182129 0.793945H23.874V9.60951H0.182129V0.793945Z" fill="#0057B7"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_33_3992">
+            <rect width="24" height="18" fill="white" transform="translate(0 0.600098)"/>
+            </clipPath>
+            </defs>
+        </svg>
+        <p class="uk-date__number">+380</p>
+    </div>
+</div>
+<div class="form-our__field">
+<textarea name="comment" placeholder="Enter text"></textarea>
+</div>
+    <button type="submit" class="form-our__submit">Send</button>
+</form>
+</div>    
+</div>
+<div class="backdrop-new is-hidden">
+    <div class="modal-new">
+        <img src="./images/jpg/reviev.jpg" alt="" class="form-new__pictures">
+<form class="form-new js-speaker-form">
+    
+    <b class="form-new__title">EXPLORE OUR <br/> <span class="form-new__title--accent">NEW CHOCOLATE </span>FIRST!</b>
+    <button class="form-new-menu">
+        <svg class="form-new__icon">
+            <use href="./images/svg/menu.svg#close" class="form-new__close"></use>
+        </svg>
+    </button>
+<div class="form-new__field">
+    <input type="email" name="email" class="form-new__input" placeholder="Enter your email">
+    <button type="submit" class="form-new__submit">Submit</button>
+</div>
+</form>
+</div>    
+</div>
+<script src="./java/review.json"></script>
+<script src="./java/products.json"></script>
+<script src="./java/headermenu.json"></script>
+<script src="./java/form.json"></script>
+<script src="./java/formbuy-now.json"></script>
+<script src="./java/formour.json"></script>
+<script src="./java/formnew.json"></script>
+</body>
 </html>

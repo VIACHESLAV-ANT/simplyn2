@@ -1,0 +1,151 @@
+.footer{
+    color: var(--first-white-text);
+    background-color: var(--secondary-background);
+    padding: 32px 0;
+}
+
+.footer__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+
+
+    margin-bottom: 32px;
+    
+    &--accent{
+        color: var(--accent-text);
+    }
+}
+
+.contact__link{
+    letter-spacing: -0.02em;
+}
+
+.company--info{
+display: flex;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+padding-bottom: 32px;
+}
+
+.contact__item{
+    &:first-child{
+        margin-bottom: 14px;
+    }
+
+    &:nth-child(2n){
+        margin-bottom: 4px;
+    }
+
+    &:hover,:focus{
+        color: #FD9222;
+    }
+}
+.social{
+    display: flex;
+}
+
+.navigation{
+    margin-top: 32px;
+}
+
+.navigation__item:not(:last-child){
+margin-bottom: 18px;
+}
+
+.footer--container{
+    margin-bottom: 0;
+}
+
+footer {
+& .company--info{
+    display: block;
+}
+& .container__contact{
+    display: flex;
+    justify-content: space-between;
+}
+}
+//tablet
+
+@media screen and (min-width: 768px) {
+    footer .navigation{
+        display: flex;
+        margin-top: 24px;
+    }
+
+    .navigation__item:not(:last-child){
+        margin-right: 24px;
+    }
+
+    .footer--container{
+        margin-bottom: 0;
+    }
+
+    footer .company--info{
+        display: flex;
+        padding-bottom: 50px;
+        padding-top:18px;
+    }
+
+    .footer__title{
+        margin-right: 124px;
+    }
+
+    .contact__item{
+    
+        &:first-child{
+        margin-bottom: 14px;
+        }
+        &:nth-child(2n){
+        margin-bottom: 8px;
+        }
+    }
+
+    .container__contact{
+        display: flex;
+    }
+
+    .social__icon{
+    &:first-child{
+        margin-right: 18px;
+    }
+    }
+
+    .contact{
+        margin-right: 50px;
+    }
+}
+
+
+//Desctop
+@media screen and (min-width: 1200px) {
+    .footer{
+        padding: 0;
+    }
+    
+    .footer--container{
+        padding: 50px 32px;
+        margin-bottom: 0;
+    }
+
+    .company--info{
+        padding-bottom: 62px;
+        justify-content: space-between;
+    }
+
+    .footer__title{
+        width: 300px;
+        margin: 0;
+    }
+
+    .contact__item:nth-child(2n) {
+        margin-bottom: 4px;
+    }
+
+    .contact {
+        margin-right: 63px;
+    }
+}
+
+//Desctop

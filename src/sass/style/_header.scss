@@ -1,0 +1,246 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 20px;
+margin-bottom: 14px;
+position: relative;
+width: 100%;
+}
+
+
+.logo{
+    display: flex;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -0.03em;
+
+    align-items: center;
+
+    &--normal{
+        font-style: normal;
+}
+}
+
+.logo__icon{
+    margin-left: 4px;
+}
+.navigation__link{
+    position: relative;
+}
+.navigation__item{
+    font-weight: 500;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    align-items: center;
+
+    &:hover,:focus{
+        color: #FD9222;
+        // border-bottom: #FD9222 1px solid;
+    }
+
+    &:hover ::after,
+    :focus ::after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 2px;
+        background-color: #FD9222;
+        border-radius: 2px;
+        bottom: -8px;
+        left: 0;
+      }
+}
+
+.button__icon{
+stroke: black;
+width: 100%;
+height: 100%;
+width: 28px;
+height: 28px;
+
+&:hover .button__close,:focus .button__close{
+    stroke: #FD9222;
+}
+
+&:hover .button__menu,:focus .button__menu{
+    stroke: #FD9222;
+}
+
+&.button__icon--active .button__menu{
+    display: none;
+}
+
+&.button__icon--active .button__close{
+    display: block;
+}
+}
+
+.button-menu{
+    background-color: transparent;
+    border: none;
+    stroke: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.button__close{
+
+    position: absolute;
+    display: none;
+    stroke: white;
+
+    &--active{
+        display: block;
+    }
+}
+
+
+.menu--content{
+    @media screen and (max-width: 767px) {
+    width: 220px;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #1E1823;
+    color: white;
+    height: 100vh;
+
+    &--active{
+    display: block;
+    }
+}
+}
+
+header .navigation{
+    margin-top: 136px;
+    margin-left: 30px;
+}
+
+header .social{
+    margin-top: auto;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.social__icon{
+fill: #ffffff;
+
+&:first-child{
+    margin-right: 16px;
+}
+
+&:hover,:focus{
+    fill: #FD9222;
+}
+}
+
+
+//table
+
+@media screen and (min-width: 768px)  and (max-width: 1199px) {
+    .header-container{
+        margin-bottom: 24px;
+    }
+    
+    .menu--content{
+        width: 290px;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #1E1823;
+        color: white;
+        height: 100vh;
+    
+        &--active{
+        display: block;
+        }
+    }
+    
+    header .navigation {
+        margin-top: 156px;
+        margin-left: 85px;
+    }
+    
+    .navigation__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    
+    .button-menu {
+        top: 24px;
+        right: 32px;
+    }
+    
+    .button__icon {
+        width: 32px;
+        height: 32px;
+    }
+    }
+
+    //Desctop
+
+
+    @media screen and (min-width: 1200px) {
+        .button-menu{
+            display: none;
+        }
+    
+        header .navigation{
+            margin: 0;
+            display: flex;
+            margin-right: 137px;
+        }
+    
+        .header-container{
+            padding: 0px 32px;
+            margin-bottom: 0;
+            height: 100%;
+        }
+    
+        .header nav{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .navigation__item{
+            padding-top: 28px;
+            padding-bottom: 32px;
+            &:not(:last-child){
+                margin-bottom: 0;
+            }
+            
+        }
+    
+    
+        header .social__icon{
+            fill: black;
+        }
+    
+        .logo{
+            font-size: 18px;
+        }
+    
+        header .social {
+            margin-top: 0;
+        }
+    }

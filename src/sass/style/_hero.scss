@@ -1,0 +1,143 @@
+.hero{
+    color: var(--first-white-text);
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/jpg/hero/mobile/chocolate1.jpg);
+    border-radius: 30px;
+    padding-top: 395px;
+    padding: 395px 20px 20px 20px;
+}
+
+.hero__title{
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: -0.03em;
+margin-bottom: 32px;
+}
+.button--hero{
+    display: flex;
+}
+
+
+.button__form{
+    height: 41px;
+    background-color: var(--accent-text);
+    color: currentColor;
+    border-radius: 100px;
+    font-weight: 600;
+    line-height: 121%;
+    border: none;
+    padding: 12px 28px;
+
+    &--buy{
+        margin-right: 14px;
+        &:hover,:focus{
+            background-color: #FCF1E0;
+            color: var(--accent-text)
+        }
+    }
+
+    &--how{
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid #FFFFFF;
+        &:hover,:focus{
+            color: var(--accent-text);
+            border-color:var(--accent-text);
+        }
+    }
+}
+
+.pointer{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+}
+
+.pointer__icon{
+    margin-left: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    background: #FFF;
+    fill: var(--accent-text);
+    padding: 6px;
+}
+
+.pointer--container{
+margin-top: 32px;
+display: flex;
+align-items: center;
+
+&:hover .pointer, :focus .pointer{
+    color: var(--accent-text);
+}
+
+&:hover .pointer__icon, :focus .pointer__icon{
+    fill: #FFFFFF;
+    background-color: var(--accent-text);
+}
+}
+.button__item{
+    display: flex;
+    text-align: center;
+}
+
+
+//hero
+
+@media screen and (min-width: 768px) {
+    .hero{
+        padding: 671px 40px 40px 40px;
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/jpg/hero/table/chocolate1.jpg);
+    }
+    
+    .hero__title{
+        width: 484px;
+        font-size: 28px;
+        line-height: 122%;
+    }
+    
+    .hero-container{
+        margin-bottom: 50px;
+    }
+    
+    .nav-hero{
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    align-items: center;
+    }
+    
+    .pointer{
+        font-size: 14px;
+    }
+    
+    .pointer--container{
+        margin-top: 0;
+    }
+    
+    .pointer__icon{
+        width: 38px;
+        height: 38px;
+        margin-left: 14px;
+    }
+    
+    .button__form{
+        padding: 14px 40px;
+    }
+    }
+
+    //Desctop
+
+
+    @media screen and (min-width: 1200px) {
+        .hero{
+            background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/jpg/hero/desktop/chocolate1.jpg);
+            padding: 381px 40px 40px 40px;
+        }
+    
+        .hero-container{
+            margin-bottom: 72px;
+        }
+    }
