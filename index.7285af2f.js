@@ -1,0 +1,2 @@
+{let e=document.querySelectorAll(".review__button"),t=document.querySelectorAll(".review__item");window.addEventListener("DOMContentLoaded",function(){e.forEach(function(i,c){i.addEventListener("click",function(){e.forEach(function(e){e.classList.remove("review__button--active")}),e[c].classList.add("review__button--active"),t.forEach(function(e){e.classList.remove("review__item--active")}),t[c].classList.add("review__item--active")})})})}
+//# sourceMappingURL=index.7285af2f.js.map

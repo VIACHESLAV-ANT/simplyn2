@@ -1,0 +1,2 @@
+(()=>{var e=document.querySelector(".subscribe__button"),n=document.querySelector(".form-new-menu"),t=document.querySelector(".form-new__submit"),c=document.querySelector(".backdrop-new");function d(){c.classList.add("is-hidden")}e.addEventListener("click",function(){c.classList.remove("is-hidden")}),n.addEventListener("click",d),t.addEventListener("click",d)})();
+//# sourceMappingURL=index.201fc055.js.map

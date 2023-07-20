@@ -1,0 +1,2 @@
+{let t=document.querySelectorAll(".products__button"),c=document.querySelectorAll(".products__item");window.addEventListener("DOMContentLoaded",function(){t.forEach(function(e,o){e.addEventListener("click",function(){t.forEach(function(t){t.classList.remove("products__button--active")}),t[o].classList.add("products__button--active"),c.forEach(function(t){t.classList.remove("products__item--active")}),c[o].classList.add("products__item--active")})})})}
+//# sourceMappingURL=index.1fa3bde2.js.map
