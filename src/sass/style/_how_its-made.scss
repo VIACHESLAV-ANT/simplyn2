@@ -11,13 +11,32 @@
     &--accent{
         color: var(--accent-text);
     }
+
+    @media screen and (min-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 50px;
+    }
 }
+
+
 
 .made__video{
     border-radius: 15px;
     margin-bottom: 20px;
-    width: 335px;
+    width: 100%;
+    background-image: url("/src/images/jpg/video/mobile/img1.5x.jpg");
+
+    @media screen and (min-width: 768px) {
+        width: 614px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 600px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
 }
+
 
 
 .made__promotion{
@@ -26,7 +45,13 @@
     line-height: 133%;
 
     padding-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        width: 350px;
+        margin-bottom: 28px;
+    }
 }
+
+
 
 
 .made__text{
@@ -47,72 +72,57 @@
         border-radius: 4px;
         margin-right: 8px;
     }
+
+    @media screen and (min-width: 768px) {}
 }
+
+
 
 .made__card{
     background-color: white;
     padding: 20px 14px;
     border-radius: 15px;
+
+    @media screen and (min-width: 768px) {
+        padding: 32px;
+    }
 }
+
+
 
 .made__item:not(:last-child){
     padding-bottom: 18px;
+        
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 24px;
+    }
 }
 
 
-//table
-
-
-@media screen and (min-width: 768px) {
-    .made__video{
-        width: 614px;
-    }
-    
-    .made__title{
-        font-size: 24px;
-        margin-bottom: 50px;
-    }
-    
-    .made__card{
-        padding: 32px;
-    }
-    
-    .made__promotion{
-        width: 350px;
-        margin-bottom: 28px;
-    }
-    
     .made__list{
+        @media screen and (min-width: 768px) {
         padding-right: 70px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-right: 27px;
+        }
     }
     
     .made-container{
+        @media screen and (min-width: 768px) {
         padding: 0 77px;
-    }
+        }
     }
 
-    //Desctop
-
-    @media screen and (min-width: 1200px) {
-        .made__body{
-            display: flex;
+    .made__body{
+        @media screen and (min-width: 1200px) {
+        display: flex;
         }
+    }
     
-        .made__video{
-            width: 600px;
-            margin-right: 20px;
-            margin-bottom: 0;
-        }
-    
-        .made__promotion{
-            padding-bottom: 0;
-        }
-    
-        .made__item:not(:last-child) {
-            padding-bottom: 24px;
-        }
-    
-        .made__list{
-            padding-right: 27px;
+    .made__promotion{
+        @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
         }
     }
