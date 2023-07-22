@@ -1,0 +1,142 @@
+<div class="backdrop-buy is-hidden">
+    <div class="modal-buy">
+<form class="form-buy js-speaker-form">
+    <b class="form-buy__title"><span class="form-buy__title--accent">BUY </span>NOW</b>
+    <button class="form-buy-menu">
+        <svg class="form-buy__icon">
+            <use href="./images/svg/menu.svg#close" class="form-buy__close"></use>
+        </svg>
+    </button>
+    <ul role="group" class="form-buy__group">
+        <li class="form-buy__item">
+            <label for="order1" >
+                <input class="form-buy__checkbox" type="checkbox" name="order" id="order1" value="white-chokolad200gr">
+            </label>
+                <div class="form-buy__newbox">
+                    <picture>
+                        <source              
+                        srcset="
+                        ./images/jpg/formbuy/mobile/white/white1x.jpg 1x,
+                        ./images/jpg/formbuy/mobile/white/white1.5x.jpg 1.5x,
+                        ./images/jpg/formbuy/mobile/white/white2x.jpg 2x
+                        "
+                        media="(max-width: 767px)">
+    
+                        <source              
+                        srcset="
+                        ./images/jpg/formbuy/table/white/white1x.jpg 1x,
+                        ./images/jpg/formbuy/table/white/white1.5x.jpg 1.5x,
+                        ./images/jpg/formbuy/table/white/white2x.jpg 2x
+                        "
+                        media="(min-width: 768px)">
+                        <img 
+                        src="./images/jpg/formbuy/table/white/white1x.jpg" 
+                        alt="white chocoled" />
+                </picture>
+                    
+                    <button class="form-buy__massa">100 g</button>
+                </div>
+            
+        </li>
+        <li class="form-buy__item">            
+            <label for="order2" >
+                <input class="form-buy__checkbox" type="checkbox" name="order" id="order2" value="white-chokolad200gr">
+            </label>    
+                <div class="form-buy__newbox">
+                        <picture>
+                            <source              
+                            srcset="
+                            ./images/jpg/formbuy/mobile/milk/milk1x.jpg 1x,
+                            ./images/jpg/formbuy/mobile/milk/milk1.5x.jpg 1.5x,
+                            ./images/jpg/formbuy/mobile/milk/milk2x.jpg 2x
+                            "
+                            media="(max-width: 767px)">
+        
+                            <source              
+                            srcset="
+                            ./images/jpg/formbuy/table/milk/milk1x.jpg 1x,
+                            ./images/jpg/formbuy/table/milk/milk1.5x.jpg 1.5x,
+                            ./images/jpg/formbuy/table/milk/milk2x.jpg 2x
+                            "
+                            media="(min-width: 768px)">
+                            <img src="./images/jpg/formbuy/mobile/milk/milk1x.jpg" 
+                            alt="milk chocxolate"/>
+                    </picture>
+                        <button class="form-buy__massa">200 g</button>
+                    </div>
+        </li>
+        <li>            
+            <label for="order3" >
+                <input class="form-buy__checkbox" type="checkbox" name="order" id="order3" value="white-chokolad200gr">
+            </label>   
+                <div class="form-buy__newbox">
+                        <picture>
+                            <source              
+                            srcset="
+                            ./images/jpg/formbuy/mobile/darck/darck1x.jpg 1x,
+                            ./images/jpg/formbuy/mobile/darck/darck1.5x.jpg 1.5x,
+                            ./images/jpg/formbuy/mobile/darck/darck2x.jpg 2x
+                            "
+                            media="(max-width: 767px)">
+        
+                            <source              
+                            srcset="
+                            ./images/jpg/formbuy/table/darck/darck1x.jpg 1x,
+                            ./images/jpg/formbuy/table/darck/darck1.5x.jpg 1.5x,
+                            ./images/jpg/formbuy/table/darck/darck2x.jpg 2x
+                            "
+                            media="(min-width: 768px)">
+                            <img 
+                            src="./images/jpg/formbuy/table/darck/darck1x.jpg" 
+                            alt="darck chocolate"/>
+                    </picture>
+                        <button class="form-buy__massa">300 g</button>
+                    </div>
+        </li>
+    </ul>
+<div class="form-buy__field">
+    <label for="Personalinformation" class="fotm-buy__label">Personal information</label>
+    <div class="name-container">
+    <input type="text" name="name" id="Personalinformation" class="form-buy__input" autofocus placeholder="Name"/>
+    <input type="text" name="surname" class="form-buy__input" placeholder="Surname">
+    </div>
+</div>
+<div class="form-buy__field">
+    <label for="email" class="fotm-buy__label">Email</label>
+    <input type="email" name="email" id="email" class="form-buy__input" placeholder="Enter your email">
+</div>
+<div class="form-buy__field">
+    <label for="phone" class="fotm-buy__label">Phone number</label>
+    <input type="number" name="phone" id="phone" class="form-buy__input form-buy__input--phone" placeholder="Phone number">
+    <div class="uk-date">
+        <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="uk-date__flag">
+            <g clip-path="url(#clip0_33_3992)">
+            <path d="M23.874 0.793945H0.182129V18.4251H23.874V0.793945Z" fill="#FFD700"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.182129 0.793945H23.874V9.60951H0.182129V0.793945Z" fill="#0057B7"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_33_3992">
+            <rect width="24" height="18" fill="white" transform="translate(0 0.600098)"/>
+            </clipPath>
+            </defs>
+        </svg>
+        <p class="uk-date__number">+380</p>
+    </div>
+</div>
+<div class="form-buy__field">
+    <label for="card" class="fotm-buy__label">Card number</label>
+    <input type="number" name="card_number" class="form-buy__input" id="card" placeholder="Enter card">
+    <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="mastercard">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 12.284C9.83793 13.2437 8.33053 13.8231 6.68337 13.8231C3.00802 13.8231 0.0285645 10.9385 0.0285645 7.38029C0.0285645 3.82203 3.00802 0.9375 6.68337 0.9375C8.33053 0.9375 9.83793 1.51687 11 2.47659C12.1621 1.51687 13.6695 0.9375 15.3166 0.9375C18.992 0.9375 21.9714 3.82203 21.9714 7.38029C21.9714 10.9385 18.992 13.8231 15.3166 13.8231C13.6695 13.8231 12.1621 13.2437 11 12.284Z" fill="#ED0006"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 12.284C12.4309 11.1023 13.3382 9.34385 13.3382 7.38029C13.3382 5.41672 12.4309 3.65832 11 2.47659C12.1621 1.51687 13.6695 0.9375 15.3166 0.9375C18.992 0.9375 21.9714 3.82203 21.9714 7.38029C21.9714 10.9385 18.992 13.8231 15.3166 13.8231C13.6695 13.8231 12.1621 13.2437 11 12.284Z" fill="#F9A000"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 12.2839C12.4309 11.1022 13.3382 9.34378 13.3382 7.38023C13.3382 5.41668 12.4309 3.65829 11 2.47656C9.56916 3.65829 8.66187 5.41668 8.66187 7.38023C8.66187 9.34378 9.56916 11.1022 11 12.2839Z" fill="#FF5E00"/>
+        </svg>
+    </div>
+<div class="form-buy__field">
+<label for="comment" class="fotm-buy__label">Comment</label>
+<textarea name="comment" id="comment" placeholder="Enter text"></textarea>
+</div>
+    <button type="submit" class="form-buy__submit">Submit</button>
+</form>
+</div>    
+</div>
