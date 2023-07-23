@@ -105,18 +105,21 @@ height: 28px;
 
 
 .menu--content{
-    @media screen and (max-width: 768px) {
-    width: 220px;
-    display: none;
+    @media screen and (max-width: 1199px) {
+    width: 0;
+    opacity:0;
     position: absolute;
-    right: 0;
     top: 0;
     background-color: #1E1823;
     color: white;
     height: 100vh;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &--active{
     display: block;
+    opacity: 1;
+    right: 0px;
+    width: 220px;
     }
 }
 }

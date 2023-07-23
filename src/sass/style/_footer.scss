@@ -49,8 +49,10 @@ padding-bottom: 32px;
     margin-top: 32px;
 }
 
-.footer .navigation__item:not(:last-child){
+.navigation__item:not(:last-child){
+    @media screen and (max-width: 1199px) {
 margin-bottom: 18px;
+    }
 }
 
 .footer--container{

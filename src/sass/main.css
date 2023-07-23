@@ -251,7 +251,6 @@ img {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-    overflow: hidden;
   }
   .container--subscribe {
     margin-bottom: 0;
@@ -385,19 +384,22 @@ img {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .menu--content {
-    width: 220px;
-    display: none;
+    width: 0;
+    opacity: 0;
     position: absolute;
-    right: 0;
     top: 0;
     background-color: #1E1823;
     color: white;
     height: 100vh;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu--content--active {
     display: block;
+    opacity: 1;
+    right: 0px;
+    width: 220px;
   }
 }
 
@@ -1504,8 +1506,10 @@ img {
   margin-top: 32px;
 }
 
-.footer .navigation__item:not(:last-child) {
-  margin-bottom: 18px;
+@media screen and (max-width: 1199px) {
+  .navigation__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
 }
 
 .footer--container {
