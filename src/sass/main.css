@@ -178,12 +178,48 @@
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+.section {
+  padding-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 128px;
+  }
+}
+
+.section__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.section__title--accent {
+  color: var(--accent-text);
+}
+.section__title--taste {
+  padding-left: 26px;
+  padding-right: 26px;
+  margin-bottom: 26px;
+}
+@media screen and (min-width: 768px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 72px;
 }
 
 @media screen and (max-width: 374px) {
@@ -215,7 +251,6 @@ img {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-    margin-bottom: 100px;
     overflow: hidden;
   }
   .container--subscribe {
@@ -230,7 +265,6 @@ img {
     padding-right: 32px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 128px;
   }
   .page {
     color: var(--basic-text);
@@ -266,8 +300,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  margin-bottom: 14px;
+  padding-top: 24px;
+  padding-bottom: 14px;
   position: relative;
   width: 100%;
 }
@@ -351,7 +385,7 @@ img {
   display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .menu--content {
     width: 220px;
     display: none;
@@ -397,7 +431,7 @@ header nav {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-container {
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
   .menu--content {
     width: 290px;
@@ -579,6 +613,20 @@ img {
   text-align: center;
 }
 
+.hero-container {
+  padding-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding-bottom: 72px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     padding: 671px 40px 40px 40px;
@@ -588,9 +636,6 @@ img {
     width: 484px;
     font-size: 28px;
     line-height: 122%;
-  }
-  .hero-container {
-    margin-bottom: 50px;
   }
   .nav-hero {
     display: flex;
@@ -618,16 +663,17 @@ img {
     background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/jpg/hero/desktop/chocolate1.jpg);
     padding: 381px 40px 40px 40px;
   }
-  .hero-container {
-    margin-bottom: 72px;
-  }
 }
-.preference {
+.section--advantages {
   background-color: rgb(30, 24, 35);
-}
-.preference--container {
   padding-top: 20px;
   padding-bottom: 36px;
+}
+@media screen and (min-width: 768px) {
+  .section--advantages {
+    padding-top: 50px;
+    padding-bottom: 85px;
+  }
 }
 
 .preference-general {
@@ -712,6 +758,20 @@ img {
     padding-right: 0;
   }
 }
+.section--taste {
+  padding-top: 72px;
+}
+@media screen and (min-width: 768px) {
+  .section--taste {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--taste {
+    padding-top: 128px;
+  }
+}
+
 .taste__title {
   font-weight: 600;
   font-size: 20px;
@@ -721,7 +781,6 @@ img {
   text-transform: uppercase;
   margin: auto;
   margin-bottom: 24px;
-  width: 283px;
 }
 .taste__title--accent {
   color: var(--accent-text);
@@ -866,11 +925,30 @@ img {
 .made__title--accent {
   color: var(--accent-text);
 }
+@media screen and (min-width: 768px) {
+  .made__title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+}
 
 .made__video {
   border-radius: 15px;
   margin-bottom: 20px;
-  width: 335px;
+  width: 100%;
+  background-image: url("../images/jpg/video/mobile/img1.5x.jpg");
+}
+@media screen and (min-width: 768px) {
+  .made__video {
+    width: 614px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .made__video {
+    width: 600px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .made__promotion {
@@ -879,9 +957,19 @@ img {
   line-height: 133%;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .made__promotion {
+    width: 350px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .made__promotion {
+    padding-bottom: 0;
+  }
+}
 
 .made__text {
-  margin-left: 16px;
   position: relative;
   letter-spacing: -0.02em;
   align-items: baseline;
@@ -898,58 +986,53 @@ img {
   border-radius: 4px;
   margin-right: 8px;
 }
-
 .made__card {
   background-color: white;
   padding: 20px 14px;
   border-radius: 15px;
 }
-
-.made__item:not(:last-child) {
-  padding-bottom: 18px;
-}
-
 @media screen and (min-width: 768px) {
-  .made__video {
-    width: 614px;
-  }
-  .made__title {
-    font-size: 24px;
-    margin-bottom: 50px;
-  }
   .made__card {
     padding: 32px;
   }
-  .made__promotion {
-    width: 350px;
-    margin-bottom: 28px;
+}
+
+.made__item {
+  padding-left: 16px;
+}
+
+.made__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 1200px) {
+  .made__item:not(:last-child) {
+    margin-bottom: 24px;
   }
+}
+
+@media screen and (min-width: 768px) {
   .made__list {
     padding-right: 70px;
   }
-  .made-container {
-    padding: 0 77px;
-  }
 }
 @media screen and (min-width: 1200px) {
-  .made__body {
-    display: flex;
-  }
-  .made__video {
-    width: 600px;
-    margin-right: 20px;
-    margin-bottom: 0;
-  }
-  .made__promotion {
-    padding-bottom: 0;
-  }
-  .made__item:not(:last-child) {
-    padding-bottom: 24px;
-  }
   .made__list {
     padding-right: 27px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .made-container {
+    padding: 0 77px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made__body {
+    display: flex;
+  }
+}
+
 .products-title {
   font-weight: 600;
   font-size: 20px;
@@ -1159,6 +1242,10 @@ img {
     margin-right: 16px;
   }
 }
+.section__title--reviews {
+  margin-bottom: 74px;
+}
+
 .review__title {
   font-weight: 600;
   font-size: 20px;
@@ -1417,7 +1504,7 @@ img {
   margin-top: 32px;
 }
 
-.navigation__item:not(:last-child) {
+.footer .navigation__item:not(:last-child) {
   margin-bottom: 18px;
 }
 

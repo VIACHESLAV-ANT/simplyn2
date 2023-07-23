@@ -83,6 +83,16 @@ align-items: center;
     text-align: center;
 }
 
+.hero-container{
+    padding-bottom: 72px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 50px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 72px;
+    }
+}
+
 
 //hero
 
@@ -96,10 +106,6 @@ align-items: center;
         width: 484px;
         font-size: 28px;
         line-height: 122%;
-    }
-    
-    .hero-container{
-        margin-bottom: 50px;
     }
     
     .nav-hero{
@@ -135,9 +141,5 @@ align-items: center;
         .hero{
             background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/jpg/hero/desktop/chocolate1.jpg);
             padding: 381px 40px 40px 40px;
-        }
-    
-        .hero-container{
-            margin-bottom: 72px;
         }
     }

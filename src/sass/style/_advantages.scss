@@ -1,12 +1,12 @@
-.preference{
+.section--advantages{
     background-color: rgba(30, 24, 35, 1);
-
- &--container{
     padding-top: 20px;
     padding-bottom: 36px;
- }
+    @media screen and (min-width: 768px){
+    padding-top: 50px;
+    padding-bottom: 85px;
+    }
 }
-
 .preference-general{
     display: none; 
 }

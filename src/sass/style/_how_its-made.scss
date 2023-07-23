@@ -47,7 +47,10 @@
     padding-bottom: 20px;
     @media screen and (min-width: 768px) {
         width: 350px;
-        margin-bottom: 28px;
+        padding-bottom: 28px;
+    }
+        @media screen and (min-width: 1200px) {
+        padding-bottom: 0;
     }
 }
 
@@ -55,7 +58,6 @@
 
 
 .made__text{
-    margin-left: 16px;
     position: relative;
     letter-spacing: -0.02em;
     align-items: baseline;
@@ -88,13 +90,15 @@
     }
 }
 
-
+.made__item{
+    padding-left: 16px;
+}
 
 .made__item:not(:last-child){
-    padding-bottom: 18px;
+    margin-bottom: 18px;
         
     @media screen and (min-width: 1200px) {
-        padding-bottom: 24px;
+        margin-bottom: 24px;
     }
 }
 
@@ -118,11 +122,5 @@
     .made__body{
         @media screen and (min-width: 1200px) {
         display: flex;
-        }
-    }
-    
-    .made__promotion{
-        @media screen and (min-width: 1200px) {
-        padding-bottom: 0;
         }
     }
